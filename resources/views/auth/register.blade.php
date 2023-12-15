@@ -16,7 +16,7 @@
     <nav class="navbar bg-white border border-bottom-1 px-5">
         <div class="container-fluid mx-auto px-5 pt-1">
           <a class="navbar-brand " href="/"><img src="{{asset('assets/img/logo_brand.png')}}" alt="logo brand"></a>
-          <a href="{{route('register')}}" class="btn btn-success border-0 px-3" style="background-color: #95de64; width : 100px">Daftar</a>
+          <a href="{{route('login')}}" class="btn btn-success border-0 px-3" style="background-color: #95de64; width : 100px">Masuk</a>
         </div>
       </nav>
 
@@ -24,9 +24,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 pt-5 pe-md-4">
-                    <h1>Masuk</h1>
-                    <p class="text-secondary mb-4 mt-2">Selamat datang kembali, silahkan masuk</p>
+                    <h1>Mulai Daftar</h1>
+                    <p class="text-secondary mb-4 mt-2">Buat akun untuk melanjutkan!</p>
                     <form action="" method="post">
+                        <div class="mb-3">
+                            <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control" type="text" name="username" id="username" placeholder="Nama Panggilan">
+                        </div>
+                        <div class="mb-3">
+                            <select class="form-select text-secodanry" aria-label="Default select example">
+                                <option selected>Pilih Siswa/i atau Guru</option>
+                                <option value="siswa">Siswa</option>
+                                <option value="siswi">Siswi</option>
+                                <option value="Guru">Guru</option>
+                            </select>
+                        </div>
                         <div class="mb-3">
                             <input class="form-control" type="email" name="email" id="email" placeholder="Alamat Email">
                         </div>
@@ -44,7 +58,7 @@
                         <a href="" class="btn btn-light w-100"><img class="me-3" src="{{asset('assets/img/logo_facebook.png')}}" alt="logo Facebook">Facebook</a>
                     </div>
                     <div class="">
-                        Belum Punya Akun ? <a href="{{route('register')}}" style="color: #95de64">Daftar</a>
+                        Sudah Punya Akun ? <a href="{{route('login')}}" style="color: #95de64">Masuk</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6">
