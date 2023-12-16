@@ -24,3 +24,6 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 
 Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
 Route::get('/google/redirect', [SocialController::class, 'googleCallback']);
+
+Route::get('/login/facebook', [SocialController::class, 'facebookRedirect'])->name('facebook.login');
+Route::get('/facebook/redirect', [SocialController::class, 'facebookCallback']);

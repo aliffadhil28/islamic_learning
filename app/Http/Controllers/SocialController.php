@@ -15,8 +15,8 @@ class SocialController extends Controller
     }
     public function googleCallback()
     {
-        $googleUser = Socialite::driver('google')->user();
-
+        $googleUser = Socialite::driver('google')->stateless()->user();
+        // dd($googleUser);
         $user = User::updateOrCreate(
             ['email' => $googleUser->email],
             [
@@ -25,5 +25,24 @@ class SocialController extends Controller
         );
 
         Auth::login($user);
+        return view('welcome');
+    }
+    public function facebookRedirect()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+    public function facebookCallback()
+    {
+        $facebookUser = Socialite::driver('facebook')->stateless()->user();
+        // dd($googleUser);
+        $user = User::updateOrCreate(
+            ['email' => $facebookUser->email],
+            [
+                'name' => $facebookUser->name,
+            ]
+        );
+
+        Auth::login($user);
+        return view('welcome');
     }
 }

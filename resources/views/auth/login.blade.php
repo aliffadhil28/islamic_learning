@@ -50,7 +50,7 @@
                         <a href="{{ route('google.login') }}" class="btn btn-light w-100 mb-2 mb-md-0 me-md-2"><img
                                 class="me-3" src="{{ asset('assets/img/logo_google.png') }}"
                                 alt="logo Google">Google</a>
-                        <a href="" class="btn btn-light w-100"><img class="me-3"
+                        <a href="{{ route('facebook.login') }}" class="btn btn-light w-100"><img class="me-3"
                                 src="{{ asset('assets/img/logo_facebook.png') }}" alt="logo Facebook">Facebook</a>
                     </div>
                     <div class="">
