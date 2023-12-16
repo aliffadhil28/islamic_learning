@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SocialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,5 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login',[AuthController::class, 'index'])->name('login');
-Route::get('/register',[AuthController::class, 'register'])->name('register');
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+
+Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
+Route::get('/google/redirect', [SocialController::class, 'googleCallback']);
