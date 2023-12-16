@@ -1,0 +1,104 @@
+* {
+    font-family: "Roboto";
+}
+
+body{
+    overflow-x:hidden;
+}
+
+.link-unstyled {
+    text-decoration: none;
+    color: rgb(108,117,125);
+    cursor: pointer;
+}
+
+.link-unstyled:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact-us {
+    background-image: url("../img/bg_contact_us.png");
+}
+
+.testimoni {
+    overflow: hidden;
+}
+
+.stars {
+    margin-bottom: 0;
+    /* Mengatur margin bawah menjadi 0 */
+}
+
+.stars p {
+    margin-bottom: 0;
+    /* Mengatur margin bawah pada elemen p menjadi 0 */
+}
+
+.wrapper {
+    position: relative;
+}
+
+.wrapper button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.stars img {
+    margin-right: 5px;
+    /* Mengatur margin kanan pada elemen img menjadi 5px (sesuai kebutuhan) */
+}
+
+.cards {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.benefit {
+    object-fit: contain;
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.profil img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    /* Untuk memberikan efek lingkaran pada gambar profil */
+}
+
+.card-text-small {
+    font-size: 1em;
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 100%;
+        /* Menggunakan lebar penuh pada layar kecil */
+    }
+}
+
+#list-benefit {
+    list-style: none;
+    padding: 0;
+}
+
+#list-benefit li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Tambahkan margin sesuai kebutuhan untuk memberikan ruang antar item */
+}
+
+.benefit {
+    margin-right: 10px;
+    /* Tambahkan margin-right sesuai kebutuhan untuk memberikan ruang antara gambar dan teks */
+}
