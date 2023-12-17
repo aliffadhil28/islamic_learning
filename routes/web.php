@@ -20,10 +20,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home',[GuestController::class,'index'])->name('home');
+Route::get('/home', [GuestController::class, 'index'])->name('home');
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
+Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 
 Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
 Route::get('/google/redirect', [SocialController::class, 'googleCallback']);
