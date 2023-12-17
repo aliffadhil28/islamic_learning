@@ -26,6 +26,15 @@ class AuthController extends Controller
             'password' => 'required|string|min:8',
             'category' => 'required',
             'username' => 'required',
+        ], [
+            'name.required' => 'Nama harus diisi',
+            'name.string' => 'Nama harus berupa string',
+            'name.max' => 'Nama maksimal 255 karakter',
+            'password.required' => 'Password harus diisi',
+            'password.string' => 'Password harus berupa string',
+            'password.min' => 'Password minimal 8 karakter',
+            'category.required' => 'Harus memilih category',
+            'username.required' => 'Nama panggilan harus diisi',
         ]);
 
         // dd($data);
@@ -37,27 +46,33 @@ class AuthController extends Controller
             'category' => $data['category'],
         ]);
         Auth::login($user);
-        return view('welcome');
+        $user = auth()->user();
+        return redirect()->route('home')->with('user', $user);
     }
     public function login(Request $request)
     {
         $data = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
+        ], [
+            'email.required' => 'Email wajib diisi.',
+            'email.email' => 'Format email tidak valid.',
+            'password.required' => 'Password wajib diisi.',
         ]);
 
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
+            return view('pages.index');
         } else {
-            return redirect()->back();
+            $user = auth()->user();
+            return redirect()->back()->with('user', $user)->withInput();
         }
-        return view('welcome');
     }
     public function logout(Request $req)
     {
         Auth::logout();
         $req->session()->flush();
-        // $req->session()->regenerateToken();
+        $req->session()->regenerateToken();
         return redirect()->route('login');
     }
 }
