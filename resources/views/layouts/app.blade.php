@@ -39,8 +39,8 @@
                     </div>
                     <div class="vr my-auto" style="height: 28px; border-left: 1px solid #b0b6bf; margin-right: 15px;"></div>
                     <div class="d-flex align-items-center">
-                        <p class="me-3 my-auto mx-auto">Halo, Shofinn</p>
-                        <div class="dropdown">
+                        <p class="my-auto mx-auto">Halo, Shofinn</p>
+                        <div class="dropdown-center me-5">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="{{asset('assets/img/user1.jpg')}}" alt="" width="28px" height="28px" style="border-radius: 50%; object-fit: cover;">
                             </button>

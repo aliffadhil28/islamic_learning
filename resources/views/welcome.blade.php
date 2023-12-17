@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/53fe2192d2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{asset('assets/css/index.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
     <title>Islamic FunLearning</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -132,7 +132,8 @@
         </div>
         <div class="cards mt-4 mb-4 d-flex flex-wrap justify-content-center">
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}" class="card-img-top" alt="...">
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                    class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Yuk Mengenal Lebih Dekat dengan Planet Bumi!</h5>
                     <div class="d-flex align-items-center justify-content-between">
@@ -145,7 +146,8 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}" class="card-img-top" alt="...">
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                    class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
                     <div class="d-flex align-items-center justify-content-between">
@@ -158,7 +160,8 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}" class="card-img-top" alt="...">
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                    class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Seperti Apa Bentuk Otak dan Bagaimana Bentuknya</h5>
                     <div class="d-flex align-items-center justify-content-between">
@@ -171,7 +174,8 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}" class="card-img-top" alt="...">
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                    class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Apa itu tata surya dan Ada Apa Saja di Sana?</h5>
                     <div class="d-flex align-items-center justify-content-between">
@@ -194,13 +198,14 @@
             <img src="{{ asset('assets/img/3d_glasses.png') }}" alt="#" class="img-fluid">
         </div>
         <div class="col-12 col-lg-7 my-4">
-            <h5 id="daftar-member" class="text-success text-uppercase text-center mb-4">
+            <h5 id="daftar-member" class="text-success text-uppercase text-lg-start text-center mb-4">
                 Daftar Member
             </h5>
-            <h1 class="text-center">Apa Saja Keuntungan FunMember?</h1>
+            <h1 class="text-center text-lg-start my-4">Apa Saja Keuntungan FunMember?</h1>
             <ul id="list-benefit" class="list-unstyled">
                 <li class="d-flex mb-3">
-                    <img class="benefit me-3" src="{{ asset('assets/img/user.png') }}" alt="user" width="40px">
+                    <img class="benefit me-3" src="{{ asset('assets/img/user.png') }}" alt="user"
+                        width="40px">
                     <div class="text">
                         <h6>Special Event Khusus FunMember</h6>
                         <p class="text-secondary">Undangan ekslusif untuk setiap special event baik secara online
@@ -208,7 +213,8 @@
                     </div>
                 </li>
                 <li class="d-flex mb-3">
-                    <img class="benefit me-3" src="{{ asset('assets/img/agreement.png') }}" alt="user" width="40px">
+                    <img class="benefit me-3" src="{{ asset('assets/img/agreement.png') }}" alt="user"
+                        width="40px">
                     <div class="text">
                         <h6>Dapatkan potongan harga sebesar 10%</h6>
                         <p class="text-secondary">Potongan harga sebesar 10% dapat digunakan setiap bulan untuk satu
@@ -216,7 +222,8 @@
                     </div>
                 </li>
                 <li class="d-flex mb-3">
-                    <img class="benefit me-3" src="{{ asset('assets/img/hourglass.png') }}" alt="user" width="40px">
+                    <img class="benefit me-3" src="{{ asset('assets/img/hourglass.png') }}" alt="user"
+                        width="40px">
                     <div class="text">
                         <h6>Informasi produk pembelajaran terbaru</h6>
                         <p class="text-secondary">Nikmati penawaran produk pembelajaran terbaru FunLearning sebelum
@@ -224,23 +231,29 @@
                     </div>
                 </li>
             </ul>
-            <a href="/" class="btn btn-success border-0 px-3 mt-4 w-50"
-                style="background-color: #95de64; display: block; margin: 0 auto;">Ayo Gabung Sekarang!</a>
+            <a href="/" class="btn btn-success border-0 px-3 mt-4 w-50 mx-lg-0 mx-auto"
+                style="background-color: #95de64; display: block;">Ayo Gabung Sekarang!</a>
         </div>
     </div>
+
 
     {{-- Contact Us --}}
 
     <div class="container">
         <div class="contact-us p-5 row rounded-4">
             <div class="content mx-auto col-12 col-md-6">
-                <h5 id="contact-us"><p class="text-uppercase text-center" style="color: #95de64;">Hubungi Kami</p></h5>
+                <h5 id="contact-us">
+                    <p class="text-uppercase text-center" style="color: #95de64;">Hubungi Kami</p>
+                </h5>
                 <h1 class="text-center text-white">Informasi Terbaru</h1>
-                <p class="text-center text-white mb-5">Dapatkan informasi eksklusif produk pembelajaran terbaru FunLearning dan raih kesempatan mendapatkan bonus</p>
+                <p class="text-center text-white mb-5">Dapatkan informasi eksklusif produk pembelajaran terbaru
+                    FunLearning dan raih kesempatan mendapatkan bonus</p>
                 <form action="" method="post">
                     <div class="wrapper">
-                        <input class="form-control py-3 w-100" type="email" name="email"id="email" placeholder="Masukkan email kamu di sini...">
-                        <button id="subscribe" class="btn text-white px-3" style="background-color:#95de64" type="submit">Subscribe</button>
+                        <input class="form-control py-3 w-100" type="email" name="email"id="email"
+                            placeholder="Masukkan email kamu di sini...">
+                        <button id="subscribe" class="btn text-white px-3" style="background-color:#95de64"
+                            type="submit">Subscribe</button>
                     </div>
                 </form>
             </div>
@@ -251,9 +264,11 @@
     <footer class="container mt-5">
         <div class="row">
             <div class="col-12 col-md-7">
-                <img class="mb-3" src="{{asset('assets/img/logo_brand.png')}}" alt="FunLearning Logo">
+                <img class="mb-3" src="{{ asset('assets/img/logo_brand.png') }}" alt="FunLearning Logo">
                 <p class="text-secondary w-75">
-                    Produk pembelajaran FunLearning merupakan produk digital untuk siswa/i dan guru kelas 5 dan 6 SD, dengan menerapkan teknologi terkini seperti Augmented Reality (AR), Virtual Reality (AR), Game dan Animasi.
+                    Produk pembelajaran FunLearning merupakan produk digital untuk siswa/i dan guru kelas 5 dan 6 SD,
+                    dengan menerapkan teknologi terkini seperti Augmented Reality (AR), Virtual Reality (AR), Game dan
+                    Animasi.
                 </p>
             </div>
             <div class="col-12 col-md-5">
@@ -294,7 +309,9 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
