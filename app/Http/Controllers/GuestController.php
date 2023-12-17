@@ -16,4 +16,8 @@ class GuestController extends Controller
     public function detail(){
         return view('pages.detail-course');
     }
+
+    public function checkout(){
+        return view('pages.checkout');
+    }
 }

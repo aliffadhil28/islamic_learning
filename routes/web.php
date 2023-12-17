@@ -21,6 +21,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/home', [GuestController::class, 'index'])->name('home');
     Route::get('/logout', [AuthCOntroller::class, 'logout'])->name('logout');
     Route::get('/detail', [GuestController::class, 'detail'])->name('produk.detail');
+    Route::get('/checkout', [GuestController::class, 'checkout'])->name('produk.checkout');
 });
 
 Route::middleware(['guest'])->group(function () {

@@ -40,11 +40,11 @@
                     <div class="vr my-auto" style="height: 28px; border-left: 1px solid #b0b6bf; margin-right: 15px;">
                     </div>
                     <div class="d-flex align-items-center">
-                        <p class="my-auto mx-auto">Halo, {{ $user->name }}</p>
+                        <p class="my-auto mx-auto">Halo, {{ auth()->user()->name }}</p>
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <img src="{{ asset('assets/img/user1.jpg') }}" alt="" width="28px"
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?backgroundType=gradientLinear,solid" alt="" width="28px"
                                     height="28px" style="border-radius: 50%; object-fit: cover;">
                             </button>
                             <ul class="dropdown-menu dropdown-menu-start">
