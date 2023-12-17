@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SocialController;
 use App\Http\Controllers\GuestController;
 
 /*
@@ -21,5 +22,13 @@ Route::get('/', function () {
 
 Route::get('/home',[GuestController::class,'index'])->name('home');
 
-Route::get('/login',[AuthController::class, 'index'])->name('login');
-Route::get('/register',[AuthController::class, 'register'])->name('register');
+Route::get('/home',[GuestController::class,'index'])->name('home');
+
+Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
+
+Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
+Route::get('/google/redirect', [SocialController::class, 'googleCallback']);
+
+Route::get('/login/facebook', [SocialController::class, 'facebookRedirect'])->name('facebook.login');
+Route::get('/facebook/redirect', [SocialController::class, 'facebookCallback']);
