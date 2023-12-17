@@ -53,7 +53,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -68,7 +68,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -83,7 +83,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -98,7 +98,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -133,7 +133,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -148,7 +148,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -163,7 +163,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -178,7 +178,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -193,7 +193,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -208,7 +208,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
@@ -223,7 +223,7 @@
                         <div class="dot my-auto"></div>
                         <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
                     </div>
-                    <a href="#" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
+                    <a href="/detail" class="btn btn-outline-success mt-auto border-1 w-100" style="border-color: #95de64">Selengkapnya</a>
                 </div>
             </div>
         </div>

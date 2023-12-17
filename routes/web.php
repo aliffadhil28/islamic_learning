@@ -21,6 +21,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [GuestController::class, 'index'])->name('home');
+Route::get('/detail', [GuestController::class, 'detail'])->name('produk.detail');
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');

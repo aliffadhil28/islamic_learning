@@ -58,7 +58,7 @@
     @yield('content')
 
     {{-- Footer --}}
-    <footer class="mt-5 pt-5">
+    <footer class="pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-7">
