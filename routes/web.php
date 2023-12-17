@@ -23,8 +23,10 @@ Route::get('/', function () {
 Route::get('/home', [GuestController::class, 'index'])->name('home');
 
 Route::get('/login', [AuthController::class, 'index'])->name('login');
+Route::post('/login', [AuthController::class, 'login'])->name('user.login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
+Route::get('/logout', [AuthCOntroller::class, 'logout'])->name('logout');
 
 Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
 Route::get('/google/redirect', [SocialController::class, 'googleCallback']);

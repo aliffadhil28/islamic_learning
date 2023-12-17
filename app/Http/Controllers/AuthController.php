@@ -19,15 +19,16 @@ class AuthController extends Controller
     }
     public function store(Request $request)
     {
+        // dd($request->_token);
         $data = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8',
             'category' => 'required',
             'username' => 'required',
         ]);
 
-        dd($data);
+        // dd($data);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -35,7 +36,7 @@ class AuthController extends Controller
             'username' => $data['username'],
             'category' => $data['category'],
         ]);
-        auth()->login($user);
+        Auth::login($user);
         return view('welcome');
     }
     public function login(Request $request)
@@ -56,7 +57,7 @@ class AuthController extends Controller
     {
         Auth::logout();
         $req->session()->flush();
-        $req->session()->regenerateToken();
+        // $req->session()->regenerateToken();
         return redirect()->route('login');
     }
 }
