@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\GuestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,8 @@ use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/home',[GuestController::class,'index'])->name('home');
 
 Route::get('/login',[AuthController::class, 'index'])->name('login');
 Route::get('/register',[AuthController::class, 'register'])->name('register');
