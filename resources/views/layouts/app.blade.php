@@ -37,16 +37,19 @@
                         <i class="fa-solid fa-cart-shopping" style="color: #b0b6bf;"></i>
                         <i class="fa-regular fa-bell ms-2" style="color: #b0b6bf;"></i>
                     </div>
-                    <div class="vr my-auto" style="height: 28px; border-left: 1px solid #b0b6bf; margin-right: 15px;"></div>
+                    <div class="vr my-auto" style="height: 28px; border-left: 1px solid #b0b6bf; margin-right: 15px;">
+                    </div>
                     <div class="d-flex align-items-center">
-                        <p class="my-auto mx-auto">Halo, Shofinn</p>
+                        <p class="my-auto mx-auto">Halo, {{ $user->name }}</p>
                         <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="{{asset('assets/img/user1.jpg')}}" alt="" width="28px" height="28px" style="border-radius: 50%; object-fit: cover;">
+                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="{{ asset('assets/img/user1.jpg') }}" alt="" width="28px"
+                                    height="28px" style="border-radius: 50%; object-fit: cover;">
                             </button>
                             <ul class="dropdown-menu dropdown-menu-start">
                                 <li><a class="dropdown-item" href="#">Setting</a></li>
-                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}">Logout</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,8 +67,10 @@
                 <div class="col-12 col-md-7">
                     <img class="mb-3" src="{{ asset('assets/img/logo_brand.png') }}" alt="FunLearning Logo">
                     <p class="text-secondary w-75">
-                        Produk pembelajaran FunLearning merupakan produk digital untuk siswa/i dan guru kelas 5 dan 6 SD,
-                        dengan menerapkan teknologi terkini seperti Augmented Reality (AR), Virtual Reality (AR), Game dan
+                        Produk pembelajaran FunLearning merupakan produk digital untuk siswa/i dan guru kelas 5 dan 6
+                        SD,
+                        dengan menerapkan teknologi terkini seperti Augmented Reality (AR), Virtual Reality (AR), Game
+                        dan
                         Animasi.
                     </p>
                 </div>

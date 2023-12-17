@@ -19,15 +19,25 @@ class AuthController extends Controller
     }
     public function store(Request $request)
     {
+        // dd($request->_token);
         $data = $request->validate([
             'name' => 'required|string|max:255',
-            'email' => 'required|email|unique',
+            'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8',
             'category' => 'required',
             'username' => 'required',
+        ], [
+            'name.required' => 'Nama harus diisi',
+            'name.string' => 'Nama harus berupa string',
+            'name.max' => 'Nama maksimal 255 karakter',
+            'password.required' => 'Password harus diisi',
+            'password.string' => 'Password harus berupa string',
+            'password.min' => 'Password minimal 8 karakter',
+            'category.required' => 'Harus memilih category',
+            'username.required' => 'Nama panggilan harus diisi',
         ]);
 
-        dd($data);
+        // dd($data);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
@@ -35,22 +45,28 @@ class AuthController extends Controller
             'username' => $data['username'],
             'category' => $data['category'],
         ]);
-        auth()->login($user);
-        return view('welcome');
+        Auth::login($user);
+        $user = auth()->user();
+        return redirect()->route('home')->with('user', $user);
     }
     public function login(Request $request)
     {
         $data = $request->validate([
             'email' => 'required|email',
             'password' => 'required',
+        ], [
+            'email.required' => 'Email wajib diisi.',
+            'email.email' => 'Format email tidak valid.',
+            'password.required' => 'Password wajib diisi.',
         ]);
 
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
+            return view('pages.index');
         } else {
-            return redirect()->back();
+            $user = auth()->user();
+            return redirect()->back()->with('user', $user)->withInput();
         }
-        return view('welcome');
     }
     public function logout(Request $req)
     {

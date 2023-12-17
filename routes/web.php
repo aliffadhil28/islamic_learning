@@ -16,19 +16,27 @@ use App\Http\Controllers\GuestController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [GuestController::class, 'index'])->name('home');
+    Route::get('/logout', [AuthCOntroller::class, 'logout'])->name('logout');
+    Route::get('/detail', [GuestController::class, 'detail'])->name('produk.detail');
 });
 
-Route::get('/home', [GuestController::class, 'index'])->name('home');
-Route::get('/detail', [GuestController::class, 'detail'])->name('produk.detail');
+Route::middleware(['guest'])->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
 
-Route::get('/login', [AuthController::class, 'index'])->name('login');
-Route::get('/register', [AuthController::class, 'register'])->name('register');
-Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
+    Route::get('/login', [AuthController::class, 'index'])->name('login');
+    Route::post('/login', [AuthController::class, 'login'])->name('user.login');
+    Route::get('/register', [AuthController::class, 'register'])->name('register');
+    Route::post('/register', [AuthController::class, 'store'])->name('auth.store');
 
-Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
-Route::get('/google/redirect', [SocialController::class, 'googleCallback']);
 
-Route::get('/login/facebook', [SocialController::class, 'facebookRedirect'])->name('facebook.login');
-Route::get('/facebook/redirect', [SocialController::class, 'facebookCallback']);
+    Route::get('/login/google', [SocialController::class, 'googleRedirect'])->name('google.login');
+    Route::get('/google/redirect', [SocialController::class, 'googleCallback']);
+
+    Route::get('/login/facebook', [SocialController::class, 'facebookRedirect'])->name('facebook.login');
+    Route::get('/facebook/redirect', [SocialController::class, 'facebookCallback']);
+});

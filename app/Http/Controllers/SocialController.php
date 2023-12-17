@@ -25,7 +25,8 @@ class SocialController extends Controller
         );
 
         Auth::login($user);
-        return view('welcome');
+        $user = auth()->user();
+        return redirect()->route('home')->with('user', $user);
     }
     public function facebookRedirect()
     {
@@ -43,6 +44,7 @@ class SocialController extends Controller
         );
 
         Auth::login($user);
-        return view('welcome');
+        $user = auth()->user();
+        return redirect()->route('home')->with('user', $user);
     }
 }
