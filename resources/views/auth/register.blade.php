@@ -31,7 +31,9 @@
                 <div class="col-12 col-md-6 pt-5 pe-md-4">
                     <h1>Mulai Daftar</h1>
                     <p class="text-secondary mb-4 mt-2">Buat akun untuk melanjutkan!</p>
-                    <form action="" method="post">
+                    <form action="{{ url('/register') }}" method="post">
+
+                        @csrf
                         <div class="mb-3">
                             <input class="form-control" type="text" name="fullname" id="fullname"
                                 placeholder="Nama Lengkap">
@@ -58,7 +60,8 @@
                                 placeholder="Masukkan Password">
                         </div>
                         <div class="mb-3">
-                            <button type="submit" class="btn btn-success border-0 w-100" style="background-color:#95de64">Daftar</button>
+                            <button type="submit" class="btn btn-success border-0 w-100"
+                                style="background-color:#95de64">Daftar</button>
                         </div>
                     </form>
                     <div class="d-flex">
@@ -67,9 +70,10 @@
                         <hr class="flex-grow-1">
                     </div>
                     <div class="d-flex flex-column flex-md-row w-100 mb-4">
-                        <a href="" class="btn btn-light w-100 mb-2 mb-md-0 me-md-2"><img class="me-3"
-                                src="{{ asset('assets/img/logo_google.png') }}" alt="logo Google">Google</a>
-                        <a href="" class="btn btn-light w-100"><img class="me-3"
+                        <a href="{{ route('google.login') }}" class="btn btn-light w-100 mb-2 mb-md-0 me-md-2"><img
+                                class="me-3" src="{{ asset('assets/img/logo_google.png') }}"
+                                alt="logo Google">Google</a>
+                        <a href="{{ route('facebook.login') }}" class="btn btn-light w-100"><img class="me-3"
                                 src="{{ asset('assets/img/logo_facebook.png') }}" alt="logo Facebook">Facebook</a>
                     </div>
                     <div class="">

@@ -27,7 +27,7 @@ class AuthController extends Controller
             'username' => 'required',
         ]);
 
-        // Buat pengguna baru
+        dd($data);
         $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
