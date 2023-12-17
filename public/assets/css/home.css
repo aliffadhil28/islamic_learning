@@ -1,0 +1,21 @@
+.fyp {
+    background-color: rgba(230, 247, 255, 0.38);
+}
+
+.btn-outline-success-custom {
+    border-color: #95de64;
+    color: #95de64;
+}
+
+.btn-outline-success-custom:hover {
+    background-color: #95de64;
+    color: #ffffff; /* Warna teks saat dihover menjadi putih */
+}
+
+.dot {
+    height: 5px;
+    width: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}

@@ -40,11 +40,11 @@
                     <div class="vr my-auto" style="height: 28px; border-left: 1px solid #b0b6bf; margin-right: 15px;"></div>
                     <div class="d-flex align-items-center">
                         <p class="my-auto mx-auto">Halo, Shofinn</p>
-                        <div class="dropdown-center me-5">
+                        <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <img src="{{asset('assets/img/user1.jpg')}}" alt="" width="28px" height="28px" style="border-radius: 50%; object-fit: cover;">
                             </button>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu dropdown-menu-start">
                                 <li><a class="dropdown-item" href="#">Setting</a></li>
                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                             </ul>
@@ -58,51 +58,53 @@
     @yield('content')
 
     {{-- Footer --}}
-    <footer class="container mt-5 fixed-bottom">
-        <div class="row">
-            <div class="col-12 col-md-7">
-                <img class="mb-3" src="{{ asset('assets/img/logo_brand.png') }}" alt="FunLearning Logo">
-                <p class="text-secondary w-75">
-                    Produk pembelajaran FunLearning merupakan produk digital untuk siswa/i dan guru kelas 5 dan 6 SD,
-                    dengan menerapkan teknologi terkini seperti Augmented Reality (AR), Virtual Reality (AR), Game dan
-                    Animasi.
-                </p>
-            </div>
-            <div class="col-12 col-md-5">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <h5>Pilih Kelas</h5>
-                        <ul class="ps-0" style="list-style-type: none;">
-                            <li><a href="#" class="link-unstyled">Kelas 5 SD</a></li>
-                            <li><a href="#" class="link-unstyled">Kelas 6 SD</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Produk Pembelajaran</h5>
-                        <ul class="ps-0" style="list-style-type: none;">
-                            <li><a href="#" class="link-unstyled">Augmented Reality (AR)</a></li>
-                            <li><a href="#" class="link-unstyled">Virtual Reality (VR)</a></li>
-                            <li><a href="#" class="link-unstyled">Game Edukasi</a></li>
-                            <li><a href="#" class="link-unstyled">VIdeo Animasi</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h5>Media Sosial</h5>
-                        <ul class="ps-0" style="list-style-type: none;">
-                            <li><a href="#" class="link-unstyled">Instagram</a></li>
-                            <li><a href="#" class="link-unstyled">Youtube</a></li>
-                            <li><a href="#" class="link-unstyled">Tiktok</a></li>
-                        </ul>
+    <footer class="mt-5 pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <img class="mb-3" src="{{ asset('assets/img/logo_brand.png') }}" alt="FunLearning Logo">
+                    <p class="text-secondary w-75">
+                        Produk pembelajaran FunLearning merupakan produk digital untuk siswa/i dan guru kelas 5 dan 6 SD,
+                        dengan menerapkan teknologi terkini seperti Augmented Reality (AR), Virtual Reality (AR), Game dan
+                        Animasi.
+                    </p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between">
+                        <div>
+                            <h5>Pilih Kelas</h5>
+                            <ul class="ps-0" style="list-style-type: none;">
+                                <li><a href="#" class="link-unstyled">Kelas 5 SD</a></li>
+                                <li><a href="#" class="link-unstyled">Kelas 6 SD</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Produk Pembelajaran</h5>
+                            <ul class="ps-0" style="list-style-type: none;">
+                                <li><a href="#" class="link-unstyled">Augmented Reality (AR)</a></li>
+                                <li><a href="#" class="link-unstyled">Virtual Reality (VR)</a></li>
+                                <li><a href="#" class="link-unstyled">Game Edukasi</a></li>
+                                <li><a href="#" class="link-unstyled">VIdeo Animasi</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h5>Media Sosial</h5>
+                            <ul class="ps-0" style="list-style-type: none;">
+                                <li><a href="#" class="link-unstyled">Instagram</a></li>
+                                <li><a href="#" class="link-unstyled">Youtube</a></li>
+                                <li><a href="#" class="link-unstyled">Tiktok</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr class="mt-4">
-        <div class="d-flex justify-content-between">
-            <p>&copy2023 FunLearning Islamic, All Rights Reserved</p>
-            <div class="link">
-                <a href="/" class="link-unstyled me-2 text-black">Pemberitahuan Privasi</a>
-                <a href="/" class="link-unstyled text-black">Syarat & Ketentuan</a>
+            <hr class="mt-4">
+            <div class="d-flex flex-column flex-lg-row justify-content-between">
+                <p>&copy2023 FunLearning Islamic, All Rights Reserved</p>
+                <div class="link">
+                    <a href="/" class="link-unstyled me-2 text-black">Pemberitahuan Privasi</a>
+                    <a href="/" class="link-unstyled text-black">Syarat & Ketentuan</a>
+                </div>
             </div>
         </div>
     </footer>

@@ -187,7 +187,6 @@
                     </div>
                 </div>
             </div>
-            <!-- Tambahkan kartu lainnya di sini -->
         </div>
         <a href="#" class="btn btn-outline-secondary w-25 mt-4">Lihat Produk Lainnya</a>
     </div>
