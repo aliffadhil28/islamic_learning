@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <nav class="navbar bg-white border border-bottom-1 px-5">
+    <nav class="navbar bg-white border border-bottom-1 px-5 sticky-top">
         <div class="container-fluid mx-auto px-5 pt-1">
             <a class="navbar-brand " href="/"><img src="{{ asset('assets/img/logo_brand.png') }}"
                     alt="logo brand"></a>
