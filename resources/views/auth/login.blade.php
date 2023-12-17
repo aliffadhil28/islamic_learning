@@ -40,6 +40,9 @@
                             <input class="form-control" type="password" name="password" id="password"
                                 placeholder="Masukkan Password">
                         </div>
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-success border-0 w-100" style="background-color:#95de64">Masuk</button>
+                        </div>
                     </form>
                     <div class="d-flex">
                         <hr class="flex-grow-1">

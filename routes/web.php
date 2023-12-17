@@ -22,8 +22,6 @@ Route::get('/', function () {
 
 Route::get('/home',[GuestController::class,'index'])->name('home');
 
-Route::get('/home',[GuestController::class,'index'])->name('home');
-
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
 
