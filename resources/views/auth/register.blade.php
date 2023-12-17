@@ -31,11 +31,10 @@
                 <div class="col-12 col-md-6 pt-5 pe-md-4">
                     <h1>Mulai Daftar</h1>
                     <p class="text-secondary mb-4 mt-2">Buat akun untuk melanjutkan!</p>
-                    <form action="{{ url('/register') }}" method="post">
-
+                    <form action="{{ route('register') }}" method="POST">
                         @csrf
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="fullname" id="fullname"
+                            <input class="form-control" type="text" name="name" id="name"
                                 placeholder="Nama Lengkap">
                         </div>
                         <div class="mb-3">
