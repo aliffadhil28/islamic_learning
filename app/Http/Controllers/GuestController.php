@@ -6,7 +6,10 @@ use Illuminate\Http\Request;
 
 class GuestController extends Controller
 {
-    public function index(){
-        return view('pages.index');
+    public function index()
+    {
+        $user = auth()->user();
+
+        return view('pages.index')->with('user', $user);
     }
 }

@@ -34,29 +34,47 @@
                     <form action="{{ route('register') }}" method="POST">
                         @csrf
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="name" id="name"
-                                placeholder="Nama Lengkap">
+                            <input class="form-control @error('name') is-invalid @enderror" type="text"
+                                name="name" id="name" value="{{ old('name') }}" placeholder="Nama Lengkap">
+                            @error('name')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <input class="form-control" type="text" name="username" id="username"
+                            <input class="form-control @error('username') is-invalid @enderror" type="text"
+                                name="username" id="username" value="{{ old('username') }}"
                                 placeholder="Nama Panggilan">
+                            @error('username')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <select name='category'class="form-select text-secodanry"
+                            <select
+                                name='category'class="form-select text-secodanry @error('category') is-invalid @enderror"
                                 aria-label="Default select example">
                                 <option selected>Pilih Siswa/i atau Guru</option>
                                 <option value="Siswa">Siswa</option>
                                 <option value="Siswi">Siswi</option>
                                 <option value="Guru">Guru</option>
                             </select>
+                            @error('category')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <input class="form-control" type="email" name="email" id="email"
-                                placeholder="Alamat Email">
+                            <input class="form-control @error('email') is-invalid @enderror" type="email"
+                                name="email" id="email" value="{{ old('email') }}" placeholder="Alamat Email">
+                            @error('email')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
-                            <input class="form-control" type="password" name="password" id="password"
+                            <input class="form-control @error('password') is-invalid @enderror" type="password"
+                                name="password" id="password" value="{{ old('password') }}"
                                 placeholder="Masukkan Password">
+                            @error('password')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                            @enderror
                         </div>
                         <div class="mb-3">
                             <button type="submit" class="btn btn-success border-0 w-100"
