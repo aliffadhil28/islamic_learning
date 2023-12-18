@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="bg pt-5" style="background-color: #FAFAFA;">
+    <div class="bg pb-5 pt-5" style="background-color: #FAFAFA;">
         <div class="container d-flex justify-content-start mb-3">
             <p class="text-secondary">Fun Learning > Siswa/i Kelas 5 SD > Virtual Reality (VR) >
             <div> Informasi Produk</div>
@@ -137,7 +137,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur. Sit nunc tempus sed suspendisse ornare velit etiam. Consectetur sit aliquet nam semper tempus risus adipiscing velit. Accumsan elit morbi a nec in aenean enim et. Sit ullamcorper sed orci scelerisque ultrices ultricies pulvinar sagittis. Habitant odio eleifend et luctus sed ipsum sagittis. Convallis non feugiat enim diam amet tellus id rhoncus tristique. Aliquam sit iaculis orci ultricies in. Aenean convallis eget morbi sed nisi habitasse aliquet adipiscing justo. In sodales in eu quis quis elementum aliquet molestie. Tortor nunc aliquam pharetra semper leo lacus. Eget lectus donec fringilla facilisis.</p>
                     </div>
                 </div>
-                <div class="d-flex mb-3">
+                <div class="d-flex">
                     <img class="border me-3" src="https://api.dicebear.com/7.x/avataaars/svg?backgroundType=gradientLinear,solid" alt="" width="40px" height="40px" style="border-radius: 50%; object-fit: cover;">
                     <div class="d-flex flex-column">
                         <a href="#" class="link-unstyled mb-2">Ibu Aang Hartini</a>

@@ -16,8 +16,8 @@
     </style>
 @endsection
 @section('content')
-<div class="background">
-    <div class="container mb-5">
+<div class="background pb-5">
+    <div class="container">
         <h3 class="fw-bold mb-3">
             Pembayaran
         </h3>

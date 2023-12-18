@@ -34,7 +34,6 @@
                     <form action="{{ route('user.login') }}" method="post">
                         @csrf
                         <div class="mb-3">
-                            <label for="email" class="form-label">Alamat Email:</label>
                             <input class="form-control @error('email') is-invalid @enderror" type="email"
                                 name="email" id="email" value="{{ old('email') }}" placeholder="Alamat Email">
                             @error('email')
@@ -42,7 +41,6 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <label for="password" class="form-label">Password:</label>
                             <input class="form-control @error('password') is-invalid @enderror" type="password"
                                 name="password" id="password" value="{{ old('password') }}"
                                 placeholder="Masukkan Password">
