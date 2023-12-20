@@ -69,7 +69,7 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/detail-img.png') }}"
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-start">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
@@ -110,7 +110,7 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/detail-img.png') }}"
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-start">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
@@ -146,7 +146,7 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/detail-img.png') }}"
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-start">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>

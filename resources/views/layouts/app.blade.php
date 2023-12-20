@@ -7,6 +7,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <script src="https://kit.fontawesome.com/53fe2192d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/layout.css') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{asset('favicon-assets/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-assets/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-assets/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{asset('favicon-assets/site.webmanifest')}}">
+    <link rel="mask-icon" href="{{asset('favicon-assets/safari-pinned-tab.svg')}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <title>Islamic FunLearning</title>
     @yield('style')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"

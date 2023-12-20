@@ -5,6 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="120x120" href="{{asset('favicon-assets/apple-touch-icon.png')}}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('favicon-assets/favicon-32x32.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('favicon-assets/favicon-16x16.png')}}">
+    <link rel="manifest" href="{{asset('favicon-assets/site.webmanifest')}}">
+    <link rel="mask-icon" href="{{asset('favicon-assets/safari-pinned-tab.svg')}}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://kit.fontawesome.com/53fe2192d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/index.css') }}">
     <title>Islamic FunLearning</title>
@@ -153,7 +160,7 @@
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/detail-img.png') }}"
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title text-start">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
