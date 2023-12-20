@@ -44,8 +44,9 @@
                         <div class="dropdown">
                             <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                <img src="https://api.dicebear.com/7.x/avataaars/svg?backgroundType=gradientLinear,solid" alt="" width="28px"
-                                    height="28px" style="border-radius: 50%; object-fit: cover;">
+                                <img src="https://api.dicebear.com/7.x/avataaars/svg?backgroundType=gradientLinear,solid"
+                                    alt="" width="28px" height="28px"
+                                    style="border-radius: 50%; object-fit: cover;">
                             </button>
                             <ul class="dropdown-menu dropdown-menu-start">
                                 <li><a class="dropdown-item" href="#">Setting</a></li>
@@ -113,6 +114,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
     </script>
@@ -127,6 +130,24 @@
             testimoniItems.forEach(function(item, index) {
                 var transformValue = index * -12; // Penyesuaian nilai transform berdasarkan indeks
                 item.style.transform = 'translateX(' + transformValue + 'px)';
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.kelas-item').on('click', function() {
+                const selectedItemText = $(this).text();
+                $('#dropdownKelas').html(selectedItemText).addClass('selected-item');
+                $('#dropdownKelas').removeClass('border');
+                $('#dropdownKelas').removeClass('border-secondary');
+                $('#dropdownKelas').removeClass('text-secondary');
+            });
+            $('.kategori-item').on('click', function() {
+                const selectedItemText = $(this).text();
+                $('#dropdownKategori').html(selectedItemText).addClass('selected-item');
+                $('#dropdownKategori').removeClass('border');
+                $('#dropdownKategori').removeClass('border-secondary');
+                $('#dropdownKategori').removeClass('text-secondary');
             });
         });
     </script>

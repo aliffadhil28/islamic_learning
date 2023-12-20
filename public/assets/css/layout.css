@@ -11,3 +11,12 @@
 footer{
     background-color: #F6FFED;
 }
+
+.dropdown-item:hover{
+    background-color: #d9f7be!important;
+}
+
+.selected-item {
+    border-color: #95de64!important;
+    color: #95de64!important;
+}

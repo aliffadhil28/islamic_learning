@@ -102,3 +102,7 @@ body{
     margin-right: 10px;
     /* Tambahkan margin-right sesuai kebutuhan untuk memberikan ruang antara gambar dan teks */
 }
+
+.dropdown-item:hover {
+    background-color: #d9f7be!important;
+}

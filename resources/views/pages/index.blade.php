@@ -11,26 +11,26 @@
                     <div class="d-flex my-3 my-lg-auto mx-auto m-lg-0 align-items-center">
                         <p class="text-secondary my-auto me-3">Pilih Kelas :</p>
                         <div class="dropdown-center">
-                            <button class="btn btn-dark d-flex align-items-center justify-content-between dropdown-toggle border border-1 border-secondary text-secondary" style="width: 260px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button id="dropdownKelas" class="btn btn-dark border d-flex align-items-center justify-content-between dropdown-toggle border border-1 border-secondary text-secondary" style="width: 260px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Siswa/i Kelas 5-6 SD
                             </button>
                             <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Action two</a></li>
-                                <li><a class="dropdown-item" href="#">Action three</a></li>
+                                <li><a class="dropdown-item kelas-item" href="#">Kelas 5 SD</a></li>
+                                <li><a class="dropdown-item kelas-item" href="#">Kelas 6 SD</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="d-flex my-3 my-lg-auto mx-auto m-lg-0 align-items-center my-3 ms-auto">
                         <p class="text-secondary my-auto me-3">Kategori :</p>
                         <div class="dropdown-center">
-                            <button class="btn btn-dark d-flex align-items-center justify-content-between dropdown-toggle border border-1 border-secondary text-secondary" style="width: 260px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button id="dropdownKategori" class="btn btn-dark d-flex align-items-center justify-content-between dropdown-toggle border border-1 border-secondary text-secondary" style="width: 260px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Produk Pembelajaran
                             </button>
                             <ul class="dropdown-menu dropdown-menu-start">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Action two</a></li>
-                                <li><a class="dropdown-item" href="#">Action three</a></li>
+                                <li><a class="dropdown-item kategori-item" href="#">Augmented Reality (AR)</a></li>
+                                <li><a class="dropdown-item kategori-item" href="#">Virtual Reality (VR)</a></li>
+                                <li><a class="dropdown-item kategori-item" href="#">Game</a></li>
+                                <li><a class="dropdown-item kategori-item" href="#">Animasi</a></li>
                             </ul>
                         </div>
                     </div>
