@@ -71,23 +71,23 @@
                     </div>
                     <div class="testimoni d-flex justify-content-center align-items-center w-75">
                         <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/user1.jpg') }}"
+                            <img class="border border-2 border-light" src="{{ asset('assets/img/soft-red.png') }}"
                                 alt="testimoni_img">
                         </div>
                         <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/user1.jpg') }}"
+                            <img class="border border-2 border-light" src="{{ asset('assets/img/soft-orange.png') }}"
                                 alt="testimoni_img">
                         </div>
                         <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/user1.jpg') }}"
+                            <img class="border border-2 border-light" src="{{ asset('assets/img/lilac.png') }}"
                                 alt="testimoni_img">
                         </div>
                         <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/user1.jpg') }}"
+                            <img class="border border-2 border-light" src="{{ asset('assets/img/sky-blue.png') }}"
                                 alt="testimoni_img">
                         </div>
                         <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/user1.jpg') }}"
+                            <img class="border border-2 border-light" src="{{ asset('assets/img/soft-green.png') }}"
                                 alt="testimoni_img">
                         </div>
                         <div class="me-auto">
@@ -131,12 +131,8 @@
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Yuk Mengenal Lebih Dekat dengan Planet Bumi!</h5>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <p class="card-text-small text-secondary my-auto">Kelas 6 SD </p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">IPA</p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
+                    <div>
+                        <p class="d-flex align-items-center justify-content-between card-text-small text-secondary my-auto text-truncate">Kelas 6 SD <span class="dot my-auto"></span> IPA <span class="dot my-auto"></span> Augmented Reality</p>
                     </div>
                 </div>
             </div>
@@ -145,12 +141,8 @@
                     class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <p class="card-text-small text-secondary my-auto">Kelas 5 SD </p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">Bahasa Arab</p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
+                    <div>
+                        <p class="d-flex align-items-center justify-content-between card-text-small text-secondary my-auto text-truncate">Kelas 6 SD <span class="dot my-auto"></span> Bahasa Arab <span class="dot my-auto"></span> Virtual Reality</p>
                     </div>
                 </div>
             </div>

@@ -19,6 +19,7 @@ body{
 
 .contact-us {
     background-image: url("../img/bg_contact_us.png");
+    background-repeat: no-repeat;
 }
 
 .testimoni {
