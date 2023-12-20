@@ -66,6 +66,7 @@ body{
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    margin: 0 5px;
 }
 
 .profil img {
@@ -106,4 +107,18 @@ body{
 
 .dropdown-item:hover {
     background-color: #d9f7be!important;
+}
+
+.truncate-container {
+    display: flex;
+    align-items: center;
+    max-width: 250px; /* Sesuaikan dengan kebutuhan */
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
 }

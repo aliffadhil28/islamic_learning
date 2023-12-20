@@ -127,51 +127,35 @@
         </div>
         <div class="cards mt-4 mb-4 d-flex flex-wrap justify-content-center">
             <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.jpg') }}"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Yuk Mengenal Lebih Dekat dengan Planet Bumi!</h5>
-                    <div>
-                        <p class="d-flex align-items-center justify-content-between card-text-small text-secondary my-auto text-truncate">Kelas 6 SD <span class="dot my-auto"></span> IPA <span class="dot my-auto"></span> Augmented Reality</p>
-                    </div>
+                    <h5 class="card-title text-start">Yuk Mengenal Lebih Dekat dengan Planet Bumi!</h5>
+                    <p class="my-2 card-text-small text-secondary text-truncate py-auto">Kelas 5 SD ◦ IPA ◦ Augmented Reality</p>
+                </div>
+            </div>
+            <div class="card shadow border-0 m-2" style="width: 18rem;">
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_otak.jpg') }}"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Seperti Apa Bentuk Otak dan Apa Saja Bagiannya?</h5>
+                    <p class="my-2 card-text-small text-secondary text-truncate py-auto">Kelas 5 SD ◦ IPA ◦ Augmented Reality</p>
+                </div>
+            </div>
+            <div class="card shadow border-0 m-2" style="width: 18rem;">
+                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_tata_surya.jpg') }}"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title text-start">Apa itu Tata Surya dan Ada Apa Saja di Sana?</h5>
+                    <p class="my-2 card-text-small text-secondary text-truncate py-auto">Kelas 5 SD ◦ IPA ◦ Virtual Reality</p>
                 </div>
             </div>
             <div class="card shadow border-0 m-2" style="width: 18rem;">
                 <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
                     class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
-                    <div>
-                        <p class="d-flex align-items-center justify-content-between card-text-small text-secondary my-auto text-truncate">Kelas 6 SD <span class="dot my-auto"></span> Bahasa Arab <span class="dot my-auto"></span> Virtual Reality</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Seperti Apa Bentuk Otak dan Bagaimana Bentuknya</h5>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <p class="card-text-small text-secondary my-auto">Kelas 6 SD </p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">IPA</p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">Augmented Reality</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card shadow border-0 m-2" style="width: 18rem;">
-                <img height="162px" style="object-fit: cover" src="{{ asset('assets/img/course_planet.png') }}"
-                    class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Apa itu tata surya dan Ada Apa Saja di Sana?</h5>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <p class="card-text-small text-secondary my-auto">Kelas 5 SD </p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">IPA</p>
-                        <div class="dot my-auto"></div>
-                        <p class="card-text-small text-secondary my-auto">Virtual Reality</p>
-                    </div>
+                    <h5 class="card-title text-start">Belajar Dasar-Dasar Bahasa Arab dengan Mudah</h5>
+                    <p class="my-2 card-text-small text-secondary text-truncate py-auto">Kelas 6 SD ◦ Bahasa Arab ◦ Virtual Reality</p>
                 </div>
             </div>
         </div>
