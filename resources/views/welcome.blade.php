@@ -69,28 +69,30 @@
                         <a href="{{ route('register') }}" class="btn border border-1 ms-2 px-3">Daftar
                             Member</a>
                     </div>
-                    <div class="testimoni d-flex justify-content-center align-items-center w-75">
-                        <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/soft-red.png') }}"
-                                alt="testimoni_img">
+                    <div class="testimoni d-flex flex-column flex-lg-row align-items-center">
+                        <div class="img-testimoni d-flex align-items-center">
+                            <div class="profil">
+                                <img class="border border-2 border-light" src="{{ asset('assets/img/soft-red.png') }}"
+                                    alt="testimoni_img">
+                            </div>
+                            <div class="profil">
+                                <img class="border border-2 border-light" src="{{ asset('assets/img/soft-orange.png') }}"
+                                    alt="testimoni_img">
+                            </div>
+                            <div class="profil">
+                                <img class="border border-2 border-light" src="{{ asset('assets/img/lilac.png') }}"
+                                    alt="testimoni_img">
+                            </div>
+                            <div class="profil">
+                                <img class="border border-2 border-light" src="{{ asset('assets/img/sky-blue.png') }}"
+                                    alt="testimoni_img">
+                            </div>
+                            <div class="profil">
+                                <img class="border border-2 border-light" src="{{ asset('assets/img/soft-green.png') }}"
+                                    alt="testimoni_img">
+                            </div>
                         </div>
-                        <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/soft-orange.png') }}"
-                                alt="testimoni_img">
-                        </div>
-                        <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/lilac.png') }}"
-                                alt="testimoni_img">
-                        </div>
-                        <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/sky-blue.png') }}"
-                                alt="testimoni_img">
-                        </div>
-                        <div class="profil">
-                            <img class="border border-2 border-light" src="{{ asset('assets/img/soft-green.png') }}"
-                                alt="testimoni_img">
-                        </div>
-                        <div class="me-auto">
+                        <div class="me-auto mt-3">
                             <div class="stars d-flex align-items-baseline mb-0">
                                 <img width="18px" class="img-fluid" src="{{ asset('assets/img/star.png') }}"
                                     alt="star">
