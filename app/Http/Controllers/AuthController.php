@@ -24,7 +24,6 @@ class AuthController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8',
-            'category' => 'required',
             'username' => 'required',
         ], [
             'name.required' => 'Nama harus diisi',
@@ -33,7 +32,6 @@ class AuthController extends Controller
             'password.required' => 'Password harus diisi',
             'password.string' => 'Password harus berupa string',
             'password.min' => 'Password minimal 8 karakter',
-            'category.required' => 'Harus memilih category',
             'username.required' => 'Nama panggilan harus diisi',
         ]);
 
@@ -43,7 +41,6 @@ class AuthController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'username' => $data['username'],
-            'category' => $data['category'],
         ]);
         Auth::login($user);
         $user = auth()->user();

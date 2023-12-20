@@ -49,19 +49,6 @@
                             @enderror
                         </div>
                         <div class="mb-3">
-                            <select
-                                name='category'class="form-select text-secodanry @error('category') is-invalid @enderror"
-                                aria-label="Default select example">
-                                <option selected>Pilih Siswa/i atau Guru</option>
-                                <option value="Siswa">Siswa</option>
-                                <option value="Siswi">Siswi</option>
-                                <option value="Guru">Guru</option>
-                            </select>
-                            @error('category')
-                                <div class="alert alert-danger">{{ $message }}</div>
-                            @enderror
-                        </div>
-                        <div class="mb-3">
                             <input class="form-control @error('email') is-invalid @enderror" type="email"
                                 name="email" id="email" value="{{ old('email') }}" placeholder="Alamat Email">
                             @error('email')

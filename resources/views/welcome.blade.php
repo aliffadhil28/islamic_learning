@@ -165,16 +165,16 @@
     </div>
 
     {{-- Daftar Member --}}
-    <div class="row mt-5">
+    <div class="row d-flex justify-content-between mt-5">
         <div class="col-12 col-lg-5">
             <img src="{{ asset('assets/img/3d_glasses.png') }}" alt="#" class="img-fluid">
         </div>
-        <div class="col-12 col-lg-7 my-4">
+        <div class="col-12 col-lg-6 my-4">
             <h5 id="daftar-member" class="text-success text-uppercase text-lg-start text-center mb-4">
                 Daftar Member
             </h5>
             <h1 class="text-center text-lg-start my-4">Apa Saja Keuntungan FunMember?</h1>
-            <ul id="list-benefit" class="list-unstyled">
+            <ul id="list-benefit" class="list-unstyled mx-auto mx-lg-0">
                 <li class="d-flex mb-3">
                     <img class="benefit me-3" src="{{ asset('assets/img/user.png') }}" alt="user"
                         width="40px">

@@ -14,7 +14,7 @@
                             <button id="dropdownKelas" class="btn btn-dark border d-flex align-items-center justify-content-between dropdown-toggle border border-1 border-secondary text-secondary" style="width: 260px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Siswa/i Kelas 5-6 SD
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-start">
+                            <ul class="dropdown-menu dropdown-menu-start w-100">
                                 <li><a class="dropdown-item kelas-item" href="#">Kelas 5 SD</a></li>
                                 <li><a class="dropdown-item kelas-item" href="#">Kelas 6 SD</a></li>
                             </ul>
@@ -26,7 +26,7 @@
                             <button id="dropdownKategori" class="btn btn-dark d-flex align-items-center justify-content-between dropdown-toggle border border-1 border-secondary text-secondary" style="width: 260px" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Produk Pembelajaran
                             </button>
-                            <ul class="dropdown-menu dropdown-menu-start">
+                            <ul class="dropdown-menu dropdown-menu-start w-100">
                                 <li><a class="dropdown-item kategori-item" href="#">Augmented Reality (AR)</a></li>
                                 <li><a class="dropdown-item kategori-item" href="#">Virtual Reality (VR)</a></li>
                                 <li><a class="dropdown-item kategori-item" href="#">Game</a></li>
